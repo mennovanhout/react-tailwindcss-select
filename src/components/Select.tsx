@@ -27,6 +27,7 @@ const Select: React.FC<SelectProps> = ({
     primaryColor = DEFAULT_THEME,
     formatGroupLabel = null,
     formatOptionLabel = null,
+    formatValue = null,
     classNames
 }) => {
     const [open, setOpen] = useState<boolean>(menuIsOpen);
@@ -185,9 +186,15 @@ const Select: React.FC<SelectProps> = ({
                 >
                     <div className="grow pl-2.5 py-2 pr-2 flex flex-wrap gap-1">
                         {!isMultiple ? (
-                            <p className="truncate cursor-default select-none">
-                                {value && !Array.isArray(value) ? value.label : placeholder}
-                            </p>
+                            formatValue && typeof formatValue === "function" ? (
+                                formatValue(
+                                    value && !Array.isArray(value) ? value!.label : placeholder
+                                )
+                            ) : (
+                                <p className="truncate cursor-default select-none">
+                                    {value && !Array.isArray(value) ? value.label : placeholder}
+                                </p>
+                            )
                         ) : (
                             <>
                                 {value === null && placeholder}

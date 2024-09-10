@@ -234,6 +234,7 @@ This table shows all the options available in react-tailwindcss-select.
 | `isSearchable`                                | `Boolean`  | `false`            | Indicates if you can search the elements of the select field.                          |
 | [`formatGroupLabel`](#formatGroupLabel)       | `Function` | `null`             | Allows you to use a custom rendering template for each subgroup title                  |
 | [`formatOptionLabel`](#formatOptionLabel)     | `Function` | `null`             | Allows you to use a custom rendering template for each option in the list              |
+| `formatValue`                                 | `Function` | `null`             | Allows your to format the resulted value                                               |
 | `loading`                                     | `Boolean`  | `false`            | Indicates if you want a loader to appear in the field.                                 |
 | `menuIsOpen`                                  | `Boolean`  | `false`            | Indicates if you want the options menu to be displayed by default.                     |
 | `noOptionsMessage`                            | `String`   | `No results found` | Default message when there is no option in the select field.                           |

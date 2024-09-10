@@ -1,11 +1,11 @@
 {
-    "name": "react-tailwindcss-select",
-    "version": "1.8.5",
+    "name": "react-tailwindcss-select-plus",
+    "version": "1.8.9",
     "description": "A select input made with React js and Tailwind CSS",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
     "types": "dist/index.d.ts",
-    "author": "onesine",
+    "author": "mennovanhout",
     "license": "MIT",
     "scripts": {
         "watch": "rollup -c -w",
@@ -21,7 +21,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/onesine/react-tailwindcss-select"
+        "url": "https://github.com/mennovanhout/react-tailwindcss-select"
     },
     "keywords": [
         "combobox",
